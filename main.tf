@@ -1,10 +1,6 @@
-# ---------------------------------------------------------------------------------------------------------
+# --------------------------------------------------------------------------------------------------------------------------
 # This demo template launches an AWS EC2 instance with a websevber serving a simple index.html page showing "Hello Technet"
-#
-# To access the "Hello Technet" page:
-#    type "http://<EC2 instance's public ip address>:8080" in your browser address bar
-#    or type "curl http://<EC2 instance's public ip address>:8080/" in any CLI
-# ---------------------------------------------------------------------------------------------------------
+# --------------------------------------------------------------------------------------------------------------------------
 
 terraform {
   required_version = ">= 1.0.0"
@@ -27,7 +23,7 @@ provider "aws" {
 # Deploy a EC2 instance
 # -------------------------------------------------------------------------------
 
-resource "aws_instance" "“terraform-demo" {
+resource "aws_instance" "terraform-demo" {
   # Ubuntu Server 18.04 LTS (HVM), SSD Volume Type in us-west-2
   ami                    = "ami-0b152cfd354c4c7a4"
   instance_type          = "t2.micro"
@@ -49,7 +45,7 @@ resource "aws_instance" "“terraform-demo" {
 # -------------------------------------------------------------------------------
 
 resource "aws_security_group" "instance" {
-  name = "terraform-example-instance"
+  name = "terraform-demo-instance"
 
   # Inbound HTTP from anywhere
   ingress {
