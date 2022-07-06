@@ -35,8 +35,10 @@ This repo contains the code that deploys an AWS EC2 instance using Terraform wit
 
 6. Run `terraform apply`
 
-7. After successful deployment, the demo will output URLs or IPs you can try in any browser or using `curl`
+7. After successful deployment, run `terraform show` to get the public IP address or URL.
 
-8. After testing, run `terraform destroy` to delete all resources. This may takes 2-3 minutes.
+8. Use the obtained URL or IP address to access the "Hello Technet" webpage in any browser or using `curl`
+
+9. After testing, run `terraform destroy` to delete all resources. This may takes 2-3 minutes.
 
 9. Notify the candidate so he can clean up the AWS account
