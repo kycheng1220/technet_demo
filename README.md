@@ -5,7 +5,7 @@ This repo contains the code that deploys an AWS EC2 instance using Terraform wit
 
 1. Use a free AWS Account
 
-2. Use terraform CLI to provision an AWS EC2 instance with httpd web services listening on port 8080. Use the following EC2 specification:
+2. Use terraform CLI to provision an AWS EC2 instance with httpd web services listening on port 8080 and the following EC2 specification:
 
         ami = plain Ubuntu 18.04 AMI
         Instance type = “t2.micro”
@@ -27,7 +27,7 @@ This repo contains the code that deploys an AWS EC2 instance using Terraform wit
         AWS_ACCESS_KEY_ID
         AWS_SECRET_ACCESS_KEY
 
-3. clone this repo into a local folder
+3. Clone this repo into a local folder
 
 4. `cd` into the demo folder
 
