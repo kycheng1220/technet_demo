@@ -27,7 +27,7 @@ provider "aws" {
 # Deploy a EC2 instance
 # -------------------------------------------------------------------------------
 
-resource "aws_instance" "technet-demo" {
+resource "aws_instance" "“terraform-demo" {
   # Ubuntu Server 18.04 LTS (HVM), SSD Volume Type in us-west-2
   ami                    = "ami-0b152cfd354c4c7a4"
   instance_type          = "t2.micro"
@@ -40,7 +40,7 @@ resource "aws_instance" "technet-demo" {
                 EOF
 
   tags = {
-    Name = "technet-demo"
+    Name = "terraform-demo"
   }
 }
 
